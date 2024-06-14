@@ -1,27 +1,13 @@
 "use client";
+ 
+import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
-import { LampContainer } from "./ui/lamp";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-
-const Project = () => {
+import Link from "next/link";
+const project = () => {
   return (
     <div>
-      <LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-      >
-      The project  <br /> I have executed
-      </motion.h1>
-    </LampContainer>
-    <CardContainer className="inter-var">
+      <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
         <CardItem
           translateZ="50"
@@ -36,12 +22,7 @@ const Project = () => {
         >
           Hover over this card to unleash the power of CSS perspective
         </CardItem>
-        <CardItem
-          translateZ="100"
-          rotateX={20}
-          rotateZ={-10}
-          className="w-full mt-4"
-        >
+        <CardItem translateZ="100" className="w-full mt-4">
           <Image
             src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             height="1000"
@@ -53,15 +34,15 @@ const Project = () => {
         <div className="flex justify-between items-center mt-20">
           <CardItem
             translateZ={20}
-            translateX={-40}
-            as="button"
+            as={Link}
+            href="https://twitter.com/mannupaaji"
+            target="__blank"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
           >
             Try now →
           </CardItem>
           <CardItem
             translateZ={20}
-            translateX={40}
             as="button"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
@@ -74,4 +55,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default project
