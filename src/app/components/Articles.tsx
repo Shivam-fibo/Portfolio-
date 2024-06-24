@@ -5,25 +5,11 @@ import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
 const Articles = () => {
   return (
-  <>
-    <LampContainer className='mt-8'>
-    <motion.h1
-      initial={{ opacity: 0.5, y: 100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{
-        delay: 0.3,
-        duration: 0.8,
-        ease: "easeInOut",
-      }}
-      className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-    >
-      Written Some <br /> tech article
-    </motion.h1>
-    </LampContainer>
-
-    <div className="flex justify-center space-x-4 ">
+<>
+    <h1 className='text-1xl md:text-7xl font-small text-center bg-clip-text text-neutral-300bg-opacity-50'>Article  Section</h1>
+    <div className="flex justify-center space-x-4 mt-8 ">
       <div className="w-full relative max-w-xs">
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+       
         <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <h1 className="font-bold text-xl text-white mb-4 relative z-50">
           LocalStorage in JavaScript
@@ -46,7 +32,7 @@ const Articles = () => {
         </div>
       </div>
       <div className="w-full relative max-w-xs">
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+       
         <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <h1 className="font-bold text-xl text-white mb-4 relative z-50">
             JavaScript Mouse Event
@@ -69,7 +55,7 @@ const Articles = () => {
         </div>
       </div>
       <div className="w-full relative max-w-xs">
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
+       
         <div className="relative shadow-xl bg-gray-900 border border-gray-800 px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
           <h1 className="font-bold text-xl text-white mb-4 relative z-50">
           JavaScript String Method
@@ -92,7 +78,6 @@ const Articles = () => {
         </div>
       </div>
     </div>
-
     </>
   );
 };
