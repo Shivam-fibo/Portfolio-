@@ -5,7 +5,7 @@ import { ImLocation } from "react-icons/im";
 
 const Contact = () => {
   return (
-    <div>
+<div className="flex justify-center items-center h-screen">
       <Button
         borderRadius="1rem"
         className="bg-black  dark:bg-dark-color-2 text-black dark:text-white border-neutral-200 dark:border-slate-800 p-10 flex flex-col justify-center align-center"
