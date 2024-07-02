@@ -40,7 +40,7 @@ const Skill = () => {
   return (
     <div>
    
-    <h1 className='text-1xl md:text-7xl font-small text-center bg-clip-text text-neutral-300bg-opacity-50'>My Skill</h1>     <div className="max-w-5xl mx-auto px-8">
+    <h1 className='text-1xl md:text-7xl font-small text-center bg-clip-text text-neutral-300bg-opacity-50'>My Skill</h1>     <div className="max-w-5xl mx-auto">
       <HoverEffect items={projects} />
     </div>
     </div>  
