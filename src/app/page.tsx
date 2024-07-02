@@ -1,7 +1,7 @@
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from './components/Navbar'
-import Project from "./components/project";
+import Project from "./components/Project";
 import Skill from "./components/Skill";
 
 import Articles from './components/Articles'
